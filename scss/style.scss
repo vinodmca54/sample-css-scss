@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'maxins';
+
+
+#main-view{
+   @include banner;
+}
+
+.margin{
+    margin-top: 100px;
+    margin-left: 45px;
+}
+
+#main-nav{
+	
+	ul{
+      @extend .margin; 
+	}
+	li{
+	    float: left;
+		display: block;
+		pading-left:20px;
+	}
+
+	a{
+     
+	 &:hover{
+	  color:black;
+	 }
+	}
+}
